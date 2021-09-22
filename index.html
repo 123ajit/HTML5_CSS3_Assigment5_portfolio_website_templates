@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 5</title>
+    <style>
+        body {
+            margin: auto;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        @font-face {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            src: url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap);
+        }
+        header {
+            height: 100px;
+            background-color: rgb(146, 203, 241);
+            position: sticky;
+            top: 0px;
+        }
+
+        header img {
+            width: 40px;
+            padding: 25px 15px;
+        }
+
+        .a1 {
+            float: left;
+        }
+
+        #a1 {
+            padding: 18px 0px;
+        }
+
+        .a1 p {
+            font-size: 14px;
+            line-height: .1;
+        }
+
+        #a2 {
+            float: right;
+            padding: 35px;
+        }
+
+        #a3 {
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        #b2 {
+            height: 500px;
+            background-image: url(https://cdn.pixabay.com/photo/2021/08/17/21/03/sheep-6554180_960_720.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #b2 div {
+            padding: 180px 0;
+            text-align: center;
+            color: white;
+            line-height: 1.5;
+        }
+
+        #b2 a {
+            text-decoration: none;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #b2 h1 {
+            font-size: 30px;
+        }
+
+        #b2 a:hover {
+            background-color: green;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #c1 {
+            text-align: center;
+            padding: 50px 27%;
+        }
+
+        #c1 a {
+            text-decoration: none;
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #d1 {
+            height: 300px;
+            text-align: center;
+            margin: 0;
+            background-image: url(https://cdn.pixabay.com/photo/2021/07/01/17/44/poppy-6379950_960_720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #d1 h1 {
+            padding: 120px;
+            color: white;
+            font-size: 40px;
+        }
+
+        #e2 {
+            height: 200px;
+            width: 30%;
+            background-color: transparent;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+            margin-right: 50px;
+            border: 2px solid salmon;
+            overflow: auto;
+        }
+
+        #e3 {
+            height: 170px;
+            width: 30%;
+            background-color: transparent;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+            border: 2px solid salmon;
+            overflow: auto;
+        }
+
+        #e1 {
+            margin: 80px;
+            text-align: center;
+        }
+
+        #f1 {
+            text-align: center;
+        }
+
+        #f1 a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border-radius: 10px;
+        }
+
+        #f1 a:hover {
+            background-color: teal;
+            border-radius: 10px;
+        }
+
+        #g1 {
+            margin: 50px 0 0 0;
+            height: 70px;
+            background-color: teal;
+        }
+
+        #g1 h1 {
+            float: left;
+            margin-left: 100px;
+        }
+
+        #g1 a {
+            float: right;
+            text-decoration: none;
+            color: white;
+            background-color: darkblue;
+            padding: 5px 10px;
+            margin: 20px 100px;
+        }
+
+        #g1 a:hover {
+            background-color: darkgreen;
+        }
+
+        #bottm {
+            height: 500px;
+            background-color: rgb(6, 6, 88);
+        }
+
+        #bottm input {
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #bottm {
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        #bottm img {
+            width: 20px;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        .z {
+            width: 15%;
+            height: 230px;
+            background-color: transparent;
+            display: inline-block;
+            vertical-align: top;
+            border-top: 1px solid grey;
+            color: white;
+        }
+
+        #bottm div {
+            margin: 25px 15px;
+        }
+
+        #z1 {
+            text-align: right;
+            padding-top: 40px;
+        }
+
+        #z2 {
+            padding-top: 50px;
+        }
+
+        #z3 {
+            text-align: left;
+            padding-top: 40px;
+        }
+
+        #z3 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #z3 a {
+            display: block;
+            padding: 10px 10px;
+            color: white;
+            letter-spacing: 3px;
+        }
+        #z3 a:hover{
+            background-color: yellow;
+            color: black;
+        }
+
+        #z4 {
+            text-align: left;
+            padding-top: 40px;
+        }
+
+        span hr {
+            margin: 0 200px;
+        }
+
+        footer {
+            color: white;
+            font-weight: bolder;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="a1">
+            <img src="https://cdn.pixabay.com/photo/2018/05/26/18/06/dog-3431913_960_720.jpg" alt="logo">
+        </div>
+        <div class="a1" id="a1">
+            <p id="a3">DIVITTORIO</p>
+            <p>ARCHITECTURE + DESIGN</P>
+        </div>
+        <nav id="a2">
+            <a href="">ABOUT</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">SERVICES</a>
+            <a href="">BLOG</a>
+            <a href="">GET STARTED</a>
+        </nav>
+    </header>
+    <section id="b2">
+        <div>
+            <h1>Classic. Timeless. Chic.</h1>
+            <p>Bringing your visions and spaces to life through architecture and design.</p>
+            <a href="">GET STARTED &#8594;</a>
+        </div>
+    </section>
+    <section id="c1">
+        <h1>Our Mission</h1>
+        <p>is to bring our clients' visions to life through architecture and design. We collaborate with our home owners
+            to create their dream home; one that is <b>timeless, unique, and truly theirs.</b></p>
+        <a href="">SEE THE PORTFOLIO &#8594;</a>
+    </section>
+    <section id="d1">
+        <h1>Happy Clients</h1>
+    </section>
+    <section id="e1">
+        <div id="e2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsam dignissimos consequatur delectus
+                facere nisi neque suscipit perferendis explicabo ex sed odit, laudantium est aspernatur nobis
+                accusantium! Ut porro neque eos rerum sequi, cumque explicabo dolorem repellat nam vitae aliquid
+                corrupti ab nulla sint quidem commodi praesentium aut, ex provident necessitatibus ipsum et.</p>
+        </div>
+        <div id="e3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum laboriosam accusamus, ex ratione
+                maxime nulla atque similique illo suscipit. Sint cum, sed dolorum doloremque dicta adipisci suscipit
+                culpa assumenda inventore illo sequi aliquam reprehenderit explicabo aut obcaecati labore.</p>
+        </div>
+    </section>
+    <section id="f1">
+        <a href="">READ MORE TESTIMONIALS ON OUR FACEBOOK PAGE &#62;</a>
+    </section>
+    <section id="g1">
+        <h1>Your new home awaits.</h1>
+        <a href="">Start the process &#8594;</a>
+    </section>
+    <section id="bottm">
+        <div>
+            <input type="search" placeholder="Search">
+        </div>
+        <div id="z1" class="z">
+            <h1>GET SOCIAL:</h1>
+            <a href="https://www.facebook.com"><img
+                    src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt=""></a>&nbsp;
+            <a href="https://www.instagram.com"><img
+                    src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579602-yumminkysocialmedia36_83067.png"
+                    alt=""></a>&nbsp;
+            <a href="https://www.pinterest.com"><img
+                    src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580660-yumminkysocialmedia24_83084.png"
+                    alt=""></a>
+        </div>
+        <div id="z2" class="z">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2106181057293!2d77.51348691455594!3d28.47320309802615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea7e051fd949%3A0xefccd5003c9032b6!2sINCAPP!5e0!3m2!1sen!2sin!4v1632257402362!5m2!1sen!2sin"
+                height="200px" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="z3" class="z">
+            <ul>
+                <li>
+                    <a href="">ABOUT</a>
+                </li>
+                <li>
+                    <a href="">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="">SERVICES</a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+                <li>
+                    <a href="">GET STARTED</a>
+                </li>
+            </ul>
+        </div>
+        <div id="z4" class="z">
+            <h1>CONTACT:</h1>
+            <p>450.4655.252 &#124; abcdx@gmail.com</p>
+        </div>
+        <span>
+            <hr>
+        </span>
+        <footer>
+            <p>TERMS AND CONDITIONS. &#124; Branding + site design by <u>KISHAN.</u></p>
+        </footer>
+    </section>
+</body>
+
+</html>
